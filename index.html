@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajapoly Connect - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #111;
+    }
+    nav h2 { color: #00aaff; }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: #00aaff; }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover;
+    }
+    .hero h1 { font-size: 40px; color: #00aaff; }
+    .hero p { color: #ccc; }
+    /* Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      border-top: 4px solid #00aaff;
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00aaff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Gajapoly Connect</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="news.html">News</a>
+      <a href="results.html">Results</a>
+      <a href="about.html">About College</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>SHAPE YOUR FUTURE<br>WITH GAJAPOLY</h1>
+    <p>Discover resources, updates and everything about Gajapoly College in one place</p>
+  </section>
+
+  <!-- Featured Cards -->
+  <section class="cards">
+    <div class="card">
+      <h3>Syllabus</h3>
+      <p>Saare semester ke subjects aur PDF yahi milegi</p>
+      <a href="syllabus.html">View Syllabus</a>
+    </div>
+    <div class="card">
+      <h3>News</h3>
+      <p>College ki latest khabar aur events</p>
+      <a href="news.html">Check News</a>
+    </div>
+    <div class="card">
+      <h3>Results</h3>
+      <p>Semester result direct check karo</p>
+      <a href="results.html">View Results</a>
+    </div>
+  </section>
+
+</body>
+</html>
