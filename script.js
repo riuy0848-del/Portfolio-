@@ -3,12 +3,12 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    navToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+    navLinks.classList.toggle('is-open');
+    navToggle.textContent = navLinks.classList.contains('is-open') ? '✕' : '☰';
   });
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
+      navLinks.classList.remove('is-open');
       navToggle.textContent = '☰';
     });
   });
@@ -50,13 +50,7 @@ if (chips.length) {
   });
 }
 
-// Live "sheet date" stamp — sets current date in mono footer stamps
+// Live "sheet date" stamp
 document.querySelectorAll('.js-date').forEach(el => {
   el.textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
-});
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('is-open');
 });
