@@ -1,0 +1,34 @@
+/* slider.css */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  /* Width for 6 images (3 original + 3 duplicates) */
+  width: calc(300px * 6); 
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  width: 300px;
+  padding: 0 10px;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.slide img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-900px); } /* Scrolls exactly 3 images width */
+}
