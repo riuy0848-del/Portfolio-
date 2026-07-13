@@ -465,3 +465,30 @@ footer{padding:64px 0 34px;}
     display: flex;
   }
 }
+/* Style the toggle button */
+.nav-toggle {
+  display: block;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide links on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--navy-deep);
+    padding: 20px;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+}
