@@ -54,3 +54,9 @@ if (chips.length) {
 document.querySelectorAll('.js-date').forEach(el => {
   el.textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
 });
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('is-open');
+});
