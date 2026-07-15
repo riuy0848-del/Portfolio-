@@ -1,17 +1,26 @@
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+/* ===========================================================
+   FIREBASE CONFIG
+   Paste your own project's config object below.
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyATSNBTUww9jj57K31",
-    authDomain: "gaja-college.firebaseapp.com",
-    projectId: "gaja-college",
-    storageBucket: "gaja-college.firebasestorage.app",
-    messagingSenderId: "483828479737",
-    appId: "1:483828479737:web:838c0d",
-    measurementId: "G-ZW4FHLC6VQ"
-  };
+   HOW TO GET IT:
+   1. Go to https://console.firebase.google.com and create a project
+      (free "Spark" plan is enough).
+   2. In your project, click the "</>" (Web) icon to register a web app.
+   3. Firebase will show you a config object like the one below —
+      copy YOUR values in here.
+   4. In the left sidebar: Build → Authentication → Get Started →
+      enable the "Email/Password" sign-in method.
+   5. In the left sidebar: Build → Firestore Database → Create database
+      (start in production mode, pick any region close to you).
+   6. In Firestore, go to the "Rules" tab and paste the rules from
+      the README instructions Claude gave you, then Publish.
+   =========================================================== */
 
-  const app = initializeApp(firebaseConfig);
-  export const auth = getAuth(app);
-</script>
+window.firebaseConfig = {
+  apiKey: "PASTE_YOUR_API_KEY_HERE",
+  authDomain: "PASTE_YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "PASTE_YOUR_PROJECT_ID",
+  storageBucket: "PASTE_YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "PASTE_YOUR_SENDER_ID",
+  appId: "PASTE_YOUR_APP_ID"
+};
